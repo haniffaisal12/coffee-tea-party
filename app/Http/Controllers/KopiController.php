@@ -44,9 +44,9 @@ class KopiController extends Controller
 		$status = $kopi->save();
 		
 		if($status) {
-			return redirect('/kopi')->with('success', 'Data Berhasil Ditambahkan');
+			return redirect('/kopi')->with('success', 'Data Berhasil Ditambahkan !');
 		} else {
-			return redirect('/kopi')->with('error', 'Data Gagal Ditambahkan');
+			return redirect('/kopi')->with('error', 'Data Gagal Ditambahkan !');
 		}
 	}
 	
